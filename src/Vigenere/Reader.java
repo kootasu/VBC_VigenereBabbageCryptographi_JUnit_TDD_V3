@@ -7,15 +7,11 @@ import java.util.Scanner;
 
 public class Reader {
 
-    public String createOneStringFromTextFile(String pathName) throws FileNotFoundException {
+    public void textFileEncrypter(String pathName) throws FileNotFoundException {
         File file = new File(pathName);
         String wholeText = "";
         Scanner sc = new Scanner(file);
-        while (sc.hasNext()) {
-            wholeText += sc.hasNext();
-        }
-        wholeText.replaceAll(" ", "");
-        return wholeText;
+        // TODO: Encrypt Alice in Wonderland
     }
 
 }
